@@ -1,24 +1,17 @@
 # ClaraConvert
 
-Aplicativo desktop em Python para conversoes de PDF, Word (DOCX) e imagens.
-Tem interface em portugues, tema escuro com destaque verde-claro e nao precisa
-de terminal para ser usado depois de iniciado.
+Aplicativo desktop em Python para conversões de PDF, Word (DOCX) e imagens. Tem interface em português, tema escuro com destaque verde-claro e não precisa de terminal para ser usado depois de iniciado.
 
-E possivel selecionar varios arquivos de uma vez ou arrasta-los para a area
-de selecao. O ClaraConvert oferece formatos de saida que funcionam para todos
-os arquivos selecionados; resultados com nomes repetidos recebem numeracao
-para nao sobrescrever arquivos existentes.
+É possível selecionar vários arquivos de uma vez ou arrastá-los para a área de seleção. O ClaraConvert oferece formatos de saída que funcionam para todos os arquivos selecionados; resultados com nomes repetidos recebem numeração para não sobrescrever arquivos existentes.
 
-## Conversoes disponiveis
+## Conversões disponíveis
 
 - PDF para DOCX, PNG ou JPG.
 - DOCX para PDF, PNG ou JPG.
 - Imagens PNG, JPG/JPEG, WEBP, BMP, TIFF e GIF para PDF.
-- Conversao de imagens entre PNG, JPG e WEBP.
-- PDFs com varias paginas e documentos Word convertidos em imagens geram um
-  arquivo por pagina, com numeracao no nome.
-- PDFs digitalizados como imagem precisam de OCR para virar texto editavel;
-  esta versao nao inclui OCR.
+- Conversão de imagens entre PNG, JPG e WEBP.
+- PDFs com várias páginas e documentos Word convertidos em imagens geram um arquivo por página, com numeração no nome.
+- PDFs digitalizados como imagem precisam de OCR para virar texto editável; esta versão não inclui OCR.
 
 ## Executar durante o desenvolvimento
 
@@ -26,25 +19,19 @@ para nao sobrescrever arquivos existentes.
 2. Abra um terminal nesta pasta.
 3. Execute:
 
-   ```powershell
-   py -m venv .venv
-   .venv\Scripts\activate
-   pip install -r requirements.txt
-   py conversor.py
-   ```
+```
+py -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+py conversor.py
+```
 
-## Criar o executavel para Windows
+## Criar o executável para Windows
 
-Execute `build.bat` com Python instalado. O arquivo sera criado em
-`dist\ClaraConvert.exe`. Copie esse executavel para outro computador Windows
-para usar o aplicativo sem instalar Python.
+Execute `build.bat` com Python instalado. O arquivo será criado em `dist\ClaraConvert.exe`. Copie esse executável para outro computador Windows para usar o aplicativo sem instalar Python.
 
-O executavel e compilado para Windows e nao e um binario multiplataforma.
-Para converter DOCX em PDF ou imagens, o computador de destino tambem precisa
-ter o LibreOffice instalado. As outras conversoes usam as bibliotecas
-empacotadas no executavel.
+O executável é compilado para Windows e não é um binário multiplataforma. Para converter DOCX em PDF ou imagens, o computador de destino também precisa ter o LibreOffice instalado. As outras conversões usam as bibliotecas empacotadas no executável.
 
 ## Privacidade
 
-As conversoes sao feitas localmente no computador. Os arquivos nao sao enviados
-para um servico online.
+As conversões são feitas localmente no computador. Os arquivos não são enviados para um serviço online.
