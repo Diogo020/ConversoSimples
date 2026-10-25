@@ -15,7 +15,7 @@ if not exist ".venv\Scripts\python.exe" (
 if errorlevel 1 goto :error
 ".venv\Scripts\python.exe" -m pip install -r requirements.txt
 if errorlevel 1 goto :error
-".venv\Scripts\python.exe" -m PyInstaller --noconfirm --clean --onefile --windowed --name ClaraConvert conversor.py
+".venv\Scripts\python.exe" -m PyInstaller --noconfirm --clean --onefile --windowed --name ClaraConvert --icon "assets\claraconvert.ico" --add-data "assets\claraconvert.ico;assets" conversor.py
 if errorlevel 1 goto :error
 
 echo.

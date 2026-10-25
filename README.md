@@ -37,7 +37,8 @@ py conversor.py
 
 Execute `build.bat` com Python instalado. O arquivo será criado em
 `dist\ClaraConvert.exe`. Copie esse executável para outro computador Windows
-para usar o aplicativo sem instalar Python.
+para usar o aplicativo sem instalar Python. O executável e a janela do
+aplicativo usam o ícone em `assets\claraconvert.ico`.
 
 Baixe a versão mais recente na
 [página de versões do ClaraConvert](https://github.com/Diogo020/ConversoSimples/releases/latest).

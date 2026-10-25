@@ -4,6 +4,7 @@ import math
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 import threading
 from pathlib import Path
@@ -17,6 +18,7 @@ from tkinterdnd2 import DND_FILES, TkinterDnD
 
 
 APP_NAME = "ClaraConvert"
+APP_ICON = Path("assets") / "claraconvert.ico"
 IMAGE_FORMATS = {"PNG": "PNG", "JPG": "JPEG", "WEBP": "WEBP"}
 SAME_FORMAT_EXTENSIONS = {
     "PDF": {".pdf"},
@@ -47,6 +49,11 @@ COLORS = {
     "error": "#FF6B6B",
     "disabled": "#00755c",
 }
+
+
+def resource_path(relative_path: Path) -> Path:
+    bundle_dir = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+    return bundle_dir / relative_path
 
 
 def find_libreoffice() -> str | None:
@@ -202,6 +209,7 @@ class ClaraConvertApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
         self.root.title(f"{APP_NAME} | Conversor de arquivos")
+        self.root.iconbitmap(str(resource_path(APP_ICON)))
         self.root.geometry("1020x820")
         self.root.minsize(900, 760)
         self.root.configure(bg=COLORS["window"])
