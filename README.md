@@ -1,8 +1,15 @@
 # ClaraConvert
 
-Aplicativo desktop em Python para conversões de PDF, Word (DOCX) e imagens. Tem interface em português, tema escuro com destaque verde-claro e não precisa de terminal para ser usado depois de iniciado.
+Aplicativo desktop em Python para conversões de PDF, Word (DOCX) e imagens.
+Tem interface em português com tema verde-escuro, seletor de destino do
+Windows e uma lista dos arquivos convertidos durante a sessão, que podem ser
+abertos com duplo clique ou pelo botão "Abrir arquivo".
 
-É possível selecionar vários arquivos de uma vez ou arrastá-los para a área de seleção. O ClaraConvert oferece formatos de saída que funcionam para todos os arquivos selecionados; resultados com nomes repetidos recebem numeração para não sobrescrever arquivos existentes.
+É possível selecionar vários arquivos de uma vez ou arrastá-los para a área
+de seleção. A lista de entrada permite remover um arquivo selecionado ou
+limpar toda a seleção. O ClaraConvert oferece formatos de saída que funcionam
+para todos os arquivos selecionados; resultados com nomes repetidos recebem
+numeração para não sobrescrever arquivos existentes.
 
 ## Conversões disponíveis
 
@@ -28,10 +35,19 @@ py conversor.py
 
 ## Criar o executável para Windows
 
-Execute `build.bat` com Python instalado. O arquivo será criado em `dist\ClaraConvert.exe`. Copie esse executável para outro computador Windows para usar o aplicativo sem instalar Python.
+Execute `build.bat` com Python instalado. O arquivo será criado em
+`dist\ClaraConvert.exe`. Copie esse executável para outro computador Windows
+para usar o aplicativo sem instalar Python.
 
-O executável é compilado para Windows e não é um binário multiplataforma. Para converter DOCX em PDF ou imagens, o computador de destino também precisa ter o LibreOffice instalado. As outras conversões usam as bibliotecas empacotadas no executável.
+Baixe a versão mais recente na
+[página de versões do ClaraConvert](https://github.com/Diogo020/ConversoSimples/releases/latest).
+
+O executável é compilado para Windows e não é um binário multiplataforma.
+Para converter DOCX em PDF ou imagens, o computador de destino também precisa
+ter o LibreOffice instalado. As outras conversões usam as bibliotecas
+empacotadas no executável.
 
 ## Privacidade
 
-As conversões são feitas localmente no computador. Os arquivos não são enviados para um serviço online.
+As conversões são feitas localmente no computador. Os arquivos não são
+enviados para um serviço online.

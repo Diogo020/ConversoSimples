@@ -1,2 +1,6 @@
-*.exe >> .gitignore
-echo *.exe
+__pycache__/
+*.py[cod]
+*.exe
+*.spec
+/build/
+/dist/
